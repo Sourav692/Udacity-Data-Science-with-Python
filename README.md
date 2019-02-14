@@ -1,8 +1,8 @@
 ### Date created
-02/14/2019.
+02/14/2019
 
 ### Project Title
-Udacity BikeShare Project
+Udacity Bike-Share Project
 
 ### Description
 Run statistics on multiple data pools related to bicycle sharing
