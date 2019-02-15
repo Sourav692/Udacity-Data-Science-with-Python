@@ -183,7 +183,12 @@ def user_stats(df):
 
 
 def show_data(df):
-    """Iterate through 5 entries at a time."""
+    """
+    Iterate through 5 entries at a time.
+
+    Returns:
+        Print five row entries of data to terminal
+    """
 
     show_more = 'yes'
     while show_more == 'yes':
