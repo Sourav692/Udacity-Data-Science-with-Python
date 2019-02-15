@@ -192,7 +192,7 @@ def show_data(df):
             while count < 5:
                 print(i)
                 count += 1
-            response = input('\nView 5 more data entries? Yes or No\n')
+            response = input('\nView 5 more data entries? Yes or No?\n')
             if response.lower() == 'no':
                 show_more = 'no'
                 break
@@ -209,7 +209,7 @@ def main():
         user_stats(df)
         show_data(df)
 
-        restart = input('\nWould you like to restart? Yes or No?.\n')
+        restart = input('\nWould you like to restart? Yes or No?\n')
         if restart.lower() != 'yes':
             break
 
