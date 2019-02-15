@@ -44,7 +44,7 @@ def get_filters():
                            'friday', 'saturday', 'sunday']:
             break
 
-    print('-'*40)
+    print('-'*50)
     return city.lower(), month.lower(), day.lower()
 
 
@@ -183,7 +183,12 @@ def user_stats(df):
 
 
 def show_data(df):
-    """Iterate through 5 entries at a time."""
+    """
+    Iterate through 5 entries at a time.
+
+    Returns:
+        Print five row entries of data to terminal
+    """
 
     show_more = 'yes'
     while show_more == 'yes':
@@ -192,7 +197,7 @@ def show_data(df):
             while count < 5:
                 print(i)
                 count += 1
-            response = input('\nView 5 more data entries? Yes or No\n')
+            response = input('\nView 5 more data entries? Yes or No?\n')
             if response.lower() == 'no':
                 show_more = 'no'
                 break
@@ -210,7 +215,7 @@ def main():
         user_stats(df)
         show_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Yes or No?\n')
         if restart.lower() != 'yes':
             break
 
