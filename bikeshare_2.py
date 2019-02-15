@@ -44,7 +44,7 @@ def get_filters():
                            'friday', 'saturday', 'sunday']:
             break
 
-    print('-'*40)
+    print('-'*50)
     return city.lower(), month.lower(), day.lower()
 
 
